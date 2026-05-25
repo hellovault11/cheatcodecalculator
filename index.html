@@ -1061,7 +1061,7 @@ Return ONLY raw JSON, no markdown:
     try {
       const res=await fetch("https://api.anthropic.com/v1/messages",{
         method:"POST",
-        headers:{"content-type":"application/json","x-api-key":"YOUR_API_KEY_HERE","anthropic-version":"2023-06-01","anthropic-dangerous-direct-browser-access":"true"},
+        headers:{"content-type":"application/json","x-api-key":"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","anthropic-version":"2023-06-01","anthropic-dangerous-direct-browser-access":"true"},
         body:JSON.stringify({model:"claude-sonnet-4-6",max_tokens:4000,messages:[{role:"user",content:prompt}]})
       });
       const data=await res.json();
